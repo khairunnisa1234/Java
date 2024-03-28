@@ -1,0 +1,10 @@
+package day05;
+
+public class Factorial {
+
+	public static int product() {
+		 
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package day08Assignment;
+
+public class AdamNumber {
+	public static int squareOfNumber(int pow){
+		int number = 12;
+		int result = 1;
+		for(int i = 0; i < pow; i++){
+			result *= number;
+		}
+		return result;
+	}
+    
+//	public static int reverseOfSquare()
+  
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(squareOfNumber(2));
+
+	}
+
+}

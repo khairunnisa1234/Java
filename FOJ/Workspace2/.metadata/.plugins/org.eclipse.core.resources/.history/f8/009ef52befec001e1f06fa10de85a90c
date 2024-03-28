@@ -1,0 +1,14 @@
+package day09;
+
+public class Demo7matrixSum {
+	
+	public static int[][] matrixSum(matrix1[][] ,matrix2[][]){
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

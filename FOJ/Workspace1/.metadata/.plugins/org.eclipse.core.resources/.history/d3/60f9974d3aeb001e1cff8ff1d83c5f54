@@ -1,0 +1,23 @@
+package day03;
+
+public class AssignPalindrome {
+
+	public static void main(String[] args) {
+		int num =121;
+		 int ncopy = 121;
+		 while(num >0){
+			 int rem = num %10;
+			 int rev = (rev*10) +rem;
+			 num = num /10;
+		 }
+		 
+		 if(ncpoy == num){
+			 System.out.println("palindrome");
+		 }
+		 else{
+			 System.out.println("not a palindrome");
+		 }
+
+	}
+
+}

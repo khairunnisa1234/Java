@@ -1,0 +1,19 @@
+package day02;
+
+public class AssignMinutesToHours {
+	
+	
+	public static double minutesToYears( int minutes){
+		double years = 365 *24 *60;
+		return years;
+		
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println(100000);
+		
+
+	}
+
+}

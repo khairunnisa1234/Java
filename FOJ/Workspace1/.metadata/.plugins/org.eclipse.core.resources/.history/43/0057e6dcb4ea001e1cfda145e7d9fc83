@@ -1,0 +1,54 @@
+
+package day05;
+
+
+public class PatternAssignment {
+	public static void PrintPattern(int n){
+		for(int i = n ;i >= 1; i--){
+			
+			for(int j = 1 ; j <= i ;j++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		for(int i = 2 ; i <= n; i++){
+			
+			for(int j = 1 ;j <= i ;j++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		
+		 int num = 2 * n - 2;
+		 
+	        // outer loop to handle rows
+	        for ( int i = n; i > 0; i--) {
+	            // inner loop to print spaces.
+	            for ( int j = 0; j < n - i; j++) {
+	                System.out.print(" ");
+	            }
+	            // Decrementing value of num after each loop
+	            num = num - 2;
+	            // inner loop to print stars.
+	            for ( int j = 0; j < i; j++) {
+	                System.out.print("*");
+	            }
+	 
+	            // printing new line for each row
+	            System.out.println();
+	        }
+
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		int n = 5 ;
+		PrintPattern(n);
+
+	}
+
+}

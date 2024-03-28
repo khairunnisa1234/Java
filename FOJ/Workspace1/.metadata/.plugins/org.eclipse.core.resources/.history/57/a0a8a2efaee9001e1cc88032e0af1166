@@ -1,0 +1,17 @@
+package day03;
+
+public class AssignSumOfDigits {
+
+	public static void main(String[] args) {
+		int num =213;
+		int sum = 0 ;
+//		while(num > 0 ){
+			int rem = num%10;
+			sum  = sum +rem;
+			num= num/10;
+//		}
+		System.out.println("sum ids: " +sum);
+
+	}
+
+}

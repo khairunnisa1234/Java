@@ -1,0 +1,22 @@
+package day08Assignment;
+import java.io.*;
+
+public class AdamNumber {
+	
+	public static number        {
+		int number =12;
+		 int result = 1;
+		 
+		 for(int  i = 0 ; i < pow; i++){
+			 result *=pow;
+		 }
+	}
+	
+	public static void main(String[] args) { 
+		  
+		 
+		
+	
+	}
+
+}

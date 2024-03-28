@@ -1,0 +1,62 @@
+package day08Assignment;
+
+public class AdamNumber {
+    public static int squareOfNumber(int num) {
+        return num * num;
+    }
+
+    public static int reverseOfDigits(int num) {
+        int rev = 0;
+        while (num > 0) {
+            int rem = num % 10;
+            rev = (rev * 10) + rem;
+            num /= 10;
+        }
+        return rev;
+    }
+    
+    /*
+    public static int reverseOfNumber( int number){
+    	
+    	 int rev = 0;
+         while (number > 0) {
+             int rem = number % 10;
+             rev = (rev * 10) + rem;
+             number /= 10;
+         }
+         return rev;
+    	
+    	
+    }
+     public static int squareOfReverseNumber(int number){
+    	 int reverse = reverseOfNumber(number);
+         return reverse * reverse;
+    	 
+    }*/
+    public static  boolean isAdam(int number){
+    	
+//    	return reverseOfSquare(number) == squareOfReverseNumber(number);
+
+        int a = squareOfNumber(number); 
+        int b = squareOfNumber(reverseOfDigits(number)); 
+         
+        if (a == reverseOfDigits(b)) 
+        return true; 
+        return false; 
+    		 
+    }
+    public static void main(String[] args) {
+        int number = 11;
+        int square = squareOfNumber(number);
+        System.out.println("Square of " + number + ": " + square);
+//        System.out.println("Reverse of square of " + number + ": " + reverseOfSquare(square));
+//        System.out.println("Reverse of  given number " + number + " is : " + reverseOfNumber(number) );
+//        System.out.println("Square of reverseof number "+"is :" +  squareOfReverseNumber(number));
+        
+     // Check if the number is Adam or not
+        if (isAdam(12)) 
+            System.out.println("Adam Number"); 
+            else
+            System.out.println("Not a Adam Number");
+    }
+}

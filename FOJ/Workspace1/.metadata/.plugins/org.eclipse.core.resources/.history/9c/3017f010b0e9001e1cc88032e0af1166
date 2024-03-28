@@ -1,0 +1,26 @@
+package day03;
+
+public class AssignSumOfDigits {
+
+	public static void main(String[] args) {
+		int num =213;
+		int sum = (num / 100)+((num % 100) /10 ) +(num % 10);
+		
+		System.out.println("the sum of digits in " + num + "is: " + sum);
+		
+	}
+		
+		
+		
+		
+////		while(num > 0 ){
+//			int rem = num%10;
+//			int result  = num ;
+//			sum  = result+rem;
+//			num= num/10;
+////		}
+//		System.out.println("sum ids: " +sum);
+//
+//	}
+
+}
