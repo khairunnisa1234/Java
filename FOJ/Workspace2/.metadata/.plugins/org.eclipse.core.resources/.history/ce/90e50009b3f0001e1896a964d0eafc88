@@ -1,0 +1,19 @@
+
+package strings;
+
+public class FirstOccurences {
+
+	public static void main(String[] args) {
+		String word = "This is a good vibe,is this good";
+		
+		System.out.println(word.indexOf("is"));
+		
+		int flag =1;
+		
+		if(flag== 1 ){
+			System.out.println("found");
+		}
+		System.out.println("not found");
+	}
+
+}

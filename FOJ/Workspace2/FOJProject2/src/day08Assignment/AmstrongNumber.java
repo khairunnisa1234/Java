@@ -5,12 +5,12 @@ public class AmstrongNumber {
 
 	public static void main(String[] args) {
 		
-		int number = 4657;
+		int number = 1533;
 		int originalnumber = number;
 		int result = 0;
 		while(originalnumber != 0){
 			int rem = originalnumber % 10;
-			result += (int) Math.pow(rem, 3);
+			result += (int) Math.pow(rem, 4);
 			originalnumber= originalnumber /10;
 			
 		}

@@ -1,0 +1,33 @@
+package day09Assignmnet;
+
+public class BoolEven {
+
+    public static boolean isSumOfBoolean(int n) {
+        int sum = 0;
+        int i = 1;
+        
+        while (n > 0) {
+            int rem = n % 10;
+            if (i % 2 == 0) {
+                sum = sum + rem;
+            }
+
+            n = n / 10;
+            i++;
+        } 
+        System.out.println("Sum of even digits: " + sum);
+
+        return sum % 2!=0;
+//        
+//        if (sum % 2 != 0) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+    }
+
+    public static void main(String[] args) {
+        int n = 2347;
+        System.out.println(isSumOfBoolean(n));
+    }
+}

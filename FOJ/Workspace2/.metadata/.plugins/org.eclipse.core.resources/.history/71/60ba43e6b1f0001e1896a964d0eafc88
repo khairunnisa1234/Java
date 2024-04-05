@@ -1,0 +1,13 @@
+
+package strings;
+
+public class FirstOccurences {
+
+	public static void main(String[] args) {
+		String word = "This is a good vibe,is this good";
+		
+		System.out.println(word.indexOf("is"));
+		
+	}
+
+}

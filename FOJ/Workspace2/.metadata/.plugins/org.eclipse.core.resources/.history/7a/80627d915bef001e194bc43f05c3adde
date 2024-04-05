@@ -1,0 +1,23 @@
+package day09Assignmnet;
+
+public class ReverseArray {
+	public static int[] reverseArray(int arr[]) {
+		int rev[]  = new int[5];
+		for (int i = arr.length - 1; i >= 0; i--) {
+			rev[i] = arr[i];
+
+		}
+
+		return rev;
+	}
+
+	public static void main(String[] args) {
+		int arr[] = new int[] {10,20,30,40};
+		
+		int a[] = reverseArray(arr);
+		
+		System.out.println(a);
+		
+		
+	}
+}
